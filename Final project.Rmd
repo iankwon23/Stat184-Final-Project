@@ -1,0 +1,247 @@
+---
+title: "Spending optimization of a Major League Baseball starting rotation"
+author: "Ian Kwon"
+date: "12/4/2019"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+### Intro
+
+```{r}
+#A pro sports teams’ goal should be to win a championship. In baseball, to have a chance at the championship trophy, a team must make it into playoff baseball where only division winners are guaranteed a spot. Often teams believe that star players, especially good pitchers, can bring the advantage to the team’s possibility of winning the division. 
+
+```
+
+#Data Access
+```{r}
+#reading data
+library(data.table)
+pitchers <- fread("C:/Users/iankw/Documents/Junior/Stat 184/Stat184-Final-Project/Finalprojectdataset.csv")
+salary <- fread("C:/Users/iankw/Documents/Junior/Stat 184/Stat184-Final-Project/Salary.csv")
+
+
+#inspecting data
+str(pitchers)
+str(salary)
+names(pitchers)
+names(salary)
+View(pitchers)
+View(salary)
+#Salary data has 15 more variables compared to Data 1.The datasets seem to have some same names, some different names and some similar names too. It seems like we can later join later with the PlayerID number if necessary. 
+```
+
+```{r}
+#In order to win such championships, big market teams like the Boston Red Sox pay big name starting pitchers like David Price for 30 million dollars a year.However small market teams like the Oakland Athletics pay Brett Anderson for almost the tenth of what Price is paid annually.
+
+
+priceanderson <-
+  salary%>%
+  select(Player,Year, Team,Payrollsalary)%>%
+  filter(Player == "David Price" |Player == "Brett Anderson")
+priceanderson
+
+priceanderson2018<- 
+  priceanderson%>%
+  filter(Year == "2018")%>%
+  ggplot(aes(x= Player, y= Payrollsalary ))+
+  ylab("Payroll Salary ($)")+
+  geom_bar(stat= "identity" )
+
+priceanderson2018  
+
+#Baseball seems to have differences when it comes to the ability of spending money per teams. 
+
+```
+
+
+#Data Wrangling
+```{r}
+# We want to look at the pitching staff of MLB teams from 2016-2018 and get a better approximate of how MLB starting pitchers are getting paid. 
+
+# Good idea to start things off would be to select only the needed variables for each dataset. We want to know the 'players', 'PlayerID' to join 2 tables, the 'team' of the players, respective years, 'GS' = Games Started to know whether the pitcher was healthy, 'ERA' = Earned Run Average to evaluate how good the pitcher is in preventing runs, 'ProjectedFull' = To get an approximate of how many wins a pitcher can contribute to the team and 'Playoff' to note whether the team of the player made the playoffs or not. 
+
+pitchers2<-
+  pitchers%>%
+  select(Player,PlayerID,Team, Year,GS,ERA,ProjectedFull,Playoff)
+pitchers2
+
+#Similarly, we want the following variables. 'PlayerID' to join the two tables, 'Payrollsalary' to understand how much the player got paid and 'Payrollpercentage' in case we wonder how much percentage the player was eating up compared to the total payroll. 
+
+salary2<-
+  salary%>%
+  select(PlayerID,Payrollsalary,Payrollpercentage)
+salary2
+
+pitchersalary<- 
+  pitchers2%>%
+  left_join(salary2, by =c("PlayerID" = "PlayerID"))
+
+str(pitchersalary)
+View(pitchersalary)
+
+#The last column, Payrollpercentage has the % signal next to all its numbers so it may be a good idea to get rid of that for computations later on. 
+
+pitchersalary<-
+  pitchersalary %>% 
+  mutate(Payrollpercentage = gsub(pattern = "[,%]", replacement = "", Payrollpercentage))
+```
+
+
+```{r}
+#Let's take a look at how teams who have made it into the playoffs had paid their starting rotation. Under the variable 'Playoff', 0 is for teams that had not made the playoffs that year, 1 is for teams that had made playoffs that year and 2 is for teams that had made playoffs as a WildCard that year. Let's take a look at how the average team had spent depdending on whether they had made the playoffs or not. 
+
+playoff<-
+  pitchersalary%>%
+  group_by(Playoff, Year)%>%
+  summarise(avg = mean(ProjectedFull))%>%
+  ggplot(aes(x = Year, y = avg))+
+  ylab("Average Projected Wins per starting pitcher")+
+  geom_line(aes(color = "red"), show.legend = FALSE)+
+  theme(axis.text.x = element_text(angle = 30, hjust=1))+
+  facet_wrap(~Playoff)
+
+playoff
+
+#It comes to no surprise that the facet '1', which is teams who had made playoffs had more pitchers with higher average of 'ProjectedFull' which is the Average Projected Wins per starting pitcher. Teams that did not make the playoffs or teams that had just barely made the playoffs as a wildcard team were respectively facets '0' and '2'. Facet 2: the wildcard teams had the next better quality starting pitchers and facet 0 had the worst out of the three. Not surprisingly, the quality of starting pitchers in the rotation mattered on whether teams make into the playoffs or not, including wildcard teams. 
+
+```
+
+
+```{r}
+# With the pitchersalary data we have, we can do investigations on the baseball statistics as well as the salary of the starting pitchers from 2016 to 2018. I am interested in how my favorite baseball team: Los Angeles Angels have spent on starting pitchers the past 3 years.
+
+angelspitchers<- 
+  pitchersalary%>%
+  filter(Team == "LAA" )%>%
+  group_by(Player, Payrollsalary, Year )%>%
+  ggplot(aes(x= reorder(Player,desc(Payrollsalary)), y= Payrollsalary))+
+  xlab("Player")+
+  ylab("Payroll Salary ($)")+
+  geom_point(aes())+
+  theme(axis.text.x = element_text(angle = 30, hjust=1))
+
+angelspitchers
+
+# We can see that Jered Weaver was the highest paid starting pitcher (at around 20 million dollars) in the past 3 years. We can also see that there has only been 2 pitchers who had stayed in the rotation for more than one year(Matt Shoemaker and Tyler Skaggs), and every other pitchers have only been in the rotation for a year. The Angels clearly need pitchers who can pitch in the rotation for consecutive years (a healthy pitcher).
+
+#We can wonder whether at least the money was being spent wisely. Which leads to the next question: how well did Jered Weaver play when he was paid that much money? 
+```
+
+
+```{r}
+jeredweaver<-
+  pitchersalary%>%
+  filter(Player == "Jered Weaver")%>%
+  summarise( median = median(ERA), mean = mean(ERA))
+  
+jeredweaver
+
+# JeredWeaver had a ERA of 5.06. Casual baseball fans would realize right away that a pitcher with an ERA of 5.06 is a very bad starting pitcher. However, since some may know so, we will compare Weaver's ERA to the league average back in 2016 when he posted such ERA.
+
+```
+
+```{r}
+leagueaverage<-
+  pitchersalary%>%
+  summarise( median = median(ERA), mean = mean(ERA))
+
+leagueaverage
+
+# Take a look at the median and mean of all 501 starting pitcher data we have. They post a median and mean at about 4.3, which is a lower ERA number compared to Weaver's 5.06. The league average pitcher will post better numbers than Weaver, yet the Angels paid Weaver 20 million dollars and still got worse pitching than league average. 
+
+
+```
+
+```{r}
+# Instead of giving Jered Weaver such amount of money, what would have happened if the Angels paid 2 pitchers for 20 million dollars? 
+
+jeredweaver2<-
+  pitchersalary%>%
+  filter(Player == "Jered Weaver")%>%
+  summarise(ERAavg = mean(ERA), totalwins = sum(ProjectedFull))
+  
+jeredweaver2
+
+tenmillion<-
+  pitchersalary%>%
+  filter(Payrollsalary == 10000000 & GS >26)%>%
+  summarise(ERAavg = mean(ERA), totalwins = sum(ProjectedFull))
+
+tenmillion
+
+
+
+#For simplicity sakes, we look at two pitchers who were paid 10 million dollars and also healthy to start more than 26 games that season. Andrew Cashner and J.A Happ meet the standards and have both produced a ERA below 3.5 and ProjectedFull of 38.6 together. Basically, for the same amount of money, the Angels could have recorded 24.9 more team wins for the same money.
+
+```
+
+```{r}
+# We figured that the Angels have not spent money wisely on that one big money pitcher Jered Weaver at 20 million dollars but yet already came up with alternatives that could have been better for the team. Now that we figured out how to efficiently spend that big 20 million dollars, let's see if the Angels had spent enough money compared to other teams.  
+
+SummaryStats <- 
+  pitchersalary %>%
+  group_by(Team)%>%
+  summarise(avg = mean(Payrollsalary),
+            se = sd(Payrollsalary) / sqrt(n()))%>%
+  mutate(top = avg + 2 * se,
+         bottom = avg - 2 * se)
+SummaryStats
+
+SummaryStats %>%
+  ggplot(aes(x = reorder(Team, desc(avg)), y = avg)) +
+  ylab("Average Payroll Salary ($)")+
+  geom_bar(stat = "identity", alpha=0.2, aes(fill = "red"), show.legend = FALSE) +
+  geom_errorbar(aes(x = Team, 
+                    ymax = top, 
+                    ymin = bottom), width=0.5) +
+  theme(axis.text.x = element_text(angle = 30, hjust=1))
+```
+
+```{r}
+# The Los Angeles Angels (LAA) are ranked 18th out of 30 teams in the average spend of money of starting pitchers. As we noticed from the earlier 'angelspitchers' dotplot, there is quite a fluctuation in the range of money they spend as well according to the errorbar. For example, Cleveland (CLE) spend more on average payroll salary but yet error bar suggests they have more of a condensed range of money spent on their pitchers. Let's check if they had made the playoffs in the past 3 years. 
+
+laacle<-
+  pitchersalary%>%
+  group_by(Year, Playoff)%>%
+  filter(Team == "CLE" | Team == "LAA")%>%
+  ggplot(aes(x = Team, y = Playoff))+
+  ylab("Made Playoffs")+
+  geom_point()+
+  theme(axis.text.x = element_text(angle = 30, hjust=1))+
+  facet_wrap(~Year)
+laacle
+
+#Since 1 is making playoffs and 0 is not making playoffs, we know CLE has made the playoffs during 2016 -2018 while LAA has not. 
+
+#While spending on starting pitchers were relatively same for CLE and LAA, CLE made the playoffs all the time from 2016 to 2018 while LAA had not made so. Basically, the Angels were not spending enough money and also not spending their money wisely. 
+```
+
+```{r}
+# Now that we understand the Angels have not been spending enough money and also not been spending money wisely, we know what to tell the Angels' baseball operation staff to do: spend more money and wisely on starting pitchers! In the game of baseball, it is somewhat inevitable to spend more money in order to make the playoffs and win a championship. Let's assume the Angels have 50 million dollars to spend on a 5 man rotation so basically 10 million dollars to spend on each starting pitcher. Also, they want healthy pitchers who can pitch more than 26 games and good pitchers who can pitch under a ERA of 4
+
+finalrotation<-
+  pitchersalary%>%
+  filter(Payrollsalary <= 10000000 & GS >26 & ERA <4)
+
+finalrotation
+
+require(data.table)
+d <- data.table(fiftymillion, key="ERA")
+d[, head(.SD), by=Payrollsalary]
+
+# In 2016, the Angels could have spent money on Kyle Hendricks, Noah Syndergaard, Tanner Roark, Zach davies and Jose Fernandez as their starting pitchers. 
+
+
+target <- c("267", "490" , "442", "388" , "297")
+finalrotation%>%
+  filter(PlayerID %in% target)%>%
+  summarise(salary = sum(Payrollsalary), ERA = mean(ERA), Wins = sum(ProjectedFull))
+  
+# with that rotation, the rotation would have posted a 2.878 ERA and cumulate 101.3 wins! All that success for only about 17 million dollars. 
+
+  
+```

@@ -1,0 +1,502 @@
+Player,PlayerID,Year,League,Division,Team,Playoff,Age,Payrollsalary,Adjsalary,Payrollpercentage
+A.J Griffin,1,2016,AL,West,Rangers,1,28,507500,493633,0.3%
+A.J Griffin,2,2017,AL,West,Rangers,0,29,2000000,2000000,1.2%
+Aaron Blair,3,2016,NL,East,Braves,0,24,507500,249570,0.3%
+Aaron Nola,4,2018,NL,East,Phillies,0,25,573000,573000,0.6%
+Aaron Nola,5,2017,NL,East,Phillies,0,24,544000,544000,0.5%
+Aaron Nola,6,2016,NL,East,Phillies,0,23,517500,517500,0.5%
+Aaron Sanchez,7,2016,AL,East,Blue Jays,2,24,517800,492420,0.3%
+Aaron Sanchez,8,2018,AL,East,Blue Jays,0,25,2700000,2700000,1.8%
+Adalberto Meija,9,2017,AL,Central,Twins,1,24,535000,435527,0.4%
+Adam Conley,10,2017,NL,East,Marlins,0,27,537500,328944,0.3%
+Adam Conley,11,2016,NL,East,Marlins,0,26,512500,512500,0.7%
+Adam Morgan,12,2016,NL,East,Phillies,0,26,507500,332760,0.3%
+Adam Plutko,13,2018,AL,Central,Indians,1,26,545000,240260,0.2%
+Adam Wainwright ,14,2018,NL,Central,Cardinals,0,36,19500000,19500000,11.9%
+Adam Wainwright ,15,2017,NL,Central,Cardinals,0,35,19500000,19500000,13.4%
+Adam Wainwright ,16,2016,NL,Central,Cardinals,0,34,19550000,19550000,13.1%
+Albert Suarez,17,2016,NL,West,Giants,2,26,507500,346625,0.2%
+Alex Cobb,18,2018,AL,East,Orioles,0,30,14000000,7500000,5.8%
+Alex Cobb,19,2017,AL,East,Rays,0,29,4200000,4200000,5.4%
+Alex Meyer,20,2017,AL,West,Angels,0,27,535000,409220,0.3%
+Alex Wood,21,2018,NL,West,Dodgers,1,27,6000000,6000000,3.0%
+Alex Wood,22,2017,NL,West,Dodgers,1,26,2800000,2800000,1.1%
+Alex Wood,23,2016,NL,West,Dodgers,1,25,530000,530000,0.2%
+Alfredo Simon,24,2016,NL,Central,Reds,0,35,2000000,2000000,2.3%
+Amir Garrett,25,2017,NL,Central,Reds,0,25,535000,280608,0.3%
+Andrew Cashner,26,2018,AL,East,Orioles,0,31,9500000,9500000,7.3%
+Andrew Cashner,27,2017,AL,West,Rangers,0,30,10000000,10000000,6.1%
+Andrew Heaney,28,2018,AL,West,Angels,0,27,800000,800000,0.5%
+Andrew Suarez ,29,2018,NL,West,Giants,0,25,545000,454150,0.2%
+Andrew Triggs,30,2017,AL,West,Athletics,0,28,537500,537500,0.7%
+Anibal Sanchez,31,2018,NL,East,Braves,1,34,1000000,1000000,0.8%
+Anibal Sanchez,32,2016,AL,Central,Tigers,0,32,16800000,16800000,8.4%
+Anibal Sanchez,33,2017,AL,Central,Tigers,0,33,16800000,16800000,8.9%
+Anthony DeSclafani,34,2018,NL,Central,Reds,0,28,860000,860000,0.9%
+Anthony DeSclafani,35,2016,NL,Central,Reds,0,26,540000,540000,0.6%
+Antonio Senzatela ,36,2018,NL,West,Rockies,2,23,545000,366250,0.3%
+Antonio Senzatela ,37,2017,NL,West,Rockies,2,22,535000,502756,0.4%
+Archie Bradley,38,2016,NL,West,Diamondbacks,0,23,507500,360490,0.4%
+Ariel Miranda,39,2017,AL,West,Mariners,0,28,540500,540500,0.3%
+Austin Gomber ,40,2018,NL,Central,Cardinals,0,24,545000,322300,0.2%
+Bartolo Colon,41,2016,NL,East,Mets,0,43,7300000,7300000,4.9%
+Bartolo Colon,42,2018,AL,West,Rangers,0,45,2450000,2450000,1.7%
+Bartolo Colon,43,2017,AL,Central,Twins,1,44,535000,222148,0.2%
+Ben Lively,44,2017,NL,East,Phillies,0,25,535000,233840,0.2%
+Blaine Hardy,45,2018,AL,Central,Tigers,0,31,795000,795000,0.6%
+Blake Snell,46,2016,AL,East,Rays,0,23,507500,305030,0.5%
+Blake Snell,47,2017,AL,East,Rays,0,24,545000,396074,0.5%
+Blake Snell,48,2018,AL,East,Rays,0,25,558200,558200,0.8%
+Brad Peacock,49,2017,AL,West,Astros,1,29,541500,541500,0.4%
+Braden Shipley,50,2016,NL,West,Diamondbacks,0,24,507500,194110,0.2%
+Brandon Finnegan,51,2016,NL,Central,Reds,0,23,511500,511500,0.6%
+Brandon McCarthy,52,2018,NL,East,Braves,1,34,11500000,7000000,5.4%
+Brandon McCarthy,53,2017,NL,West,Dodgers,1,33,11500000,11500000,4.4%
+Brent Suter ,54,2017,NL,Central,Brewers,0,27,535000,333222,0.5%
+Brent Suter ,55,2018,NL,Central,Brewers,1,28,556500,556500,0.5%
+Brett Anderson,56,2018,AL,West,Athletics,2,30,4000000,3268817,4.1%
+Brian Johnson,57,2018,AL,East,Red Sox,1,27,548000,548000,0.2%
+Bronson Arroyo,58,2017,NL,Central,Reds,0,40,535000,517459,0.5%
+Bryan Mitchell ,59,2018,NL,West,Padres,0,27,552800,552800,0.5%
+Buck Farmer,60,2017,AL,Central,Tigers,0,26,535000,151996,0.1%
+Caleb Smith,61,2018,NL,East,Marlins,0,25,1090000,1090000,1.2%
+Carlos Carrasco,62,2016,AL,Central,Indians,1,29,4500000,4500000,4.3%
+Carlos Carrasco,63,2017,AL,Central,Indians,1,30,6500000,6500000,4.9%
+Carlos Carrasco,64,2018,AL,Central,Indians,1,31,8000000,8000000,5.6%
+Carlos Martinez,65,2018,NL,Central,Cardinals,0,26,11700000,11700000,7.1%
+Carlos Martinez,66,2017,NL,Central,Cardinals,0,25,3700000,3700000,2.6%
+Carlos Martinez,67,2016,NL,Central,Cardinals,0,24,539000,539000,0.4%
+Carlos Rodon,68,2016,AL,Central,White Sox,0,23,518000,518000,0.4%
+Carlos Rodon,69,2017,AL,Central,White Sox,0,24,600000,600000,0.7%
+Carlos Rodon,70,2018,AL,Central,White Sox,0,25,2300000,2300000,3.2%
+CC Sabathia,71,2016,AL,East,Yankees,0,35,25000000,25000000,11.3%
+CC Sabathia,72,2017,AL,East,Yankees,1,36,25000000,25000000,11.9%
+CC Sabathia,73,2018,AL,East,Yankees,1,37,10500000,10500000,5.8%
+Chad Bettis,74,2018,NL,West,Rockies,2,29,2000000,2000000,1.4%
+Chad Bettis,75,2016,NL,West,Rockies,0,27,512500,512500,0.5%
+Chad Kuhl,76,2016,NL,Central,Pirates,0,23,507500,216294,0.2%
+Chad Kuhl ,77,2018,NL,Central,Pirates,0,25,570500,570500,0.6%
+Chad Kuhl ,78,2017,NL,Central,Pirates,0,24,550000,550000,0.6%
+Charlie Morton,79,2017,AL,West,Astros,1,33,8875000,8875000,6.4%
+Charlie Morton,80,2018,AL,West,Astros,1,34,8875000,8875000,5.4%
+Chase Anderson,81,2018,NL,Central,Brewers,1,30,4750000,4750000,4.4%
+Chase Anderson,82,2017,NL,Central,Brewers,0,29,2450000,2450000,3.6%
+Chase Anderson,83,2016,NL,Central,Brewers,0,28,520200,520200,0.8%
+Chris Archer,84,2016,AL,East,Rays,0,27,2916666,2916666,4.6%
+Chris Archer,85,2017,AL,East,Rays,0,28,4916666,4916666,6.3%
+Chris Sale,86,2017,AL,East,Red Sox,1,28,12000000,12000000,5.7%
+Chris Sale,87,2018,AL,East,Red Sox,1,29,12515000,12515000,5.5%
+Chris Sale,88,2016,AL,Central,White Sox,0,27,9165000,9165000,7.1%
+Chris Stratton ,89,2018,NL,West,Giants,0,27,552500,445500,0.2%
+Chris Stratton ,90,2017,NL,West,Giants,0,26,535000,248455,0.1%
+Chris Tillman,91,2016,AL,East,Orioles,2,28,6225000,6225000,4.1%
+Chris Tillman,92,2017,AL,East,Orioles,0,29,10050000,10050000,5.7%
+Chris Young,93,2016,AL,Central,Royals,0,37,4500000,4500000,3.2%
+Christian Friedrich,94,2016,NL,West,Padres,0,28,507500,369539,0.5%
+Clay Buchholz,95,2016,AL,East,Red Sox,1,31,13000000,13000000,6.3%
+Clay Buchholz,96,2018,NL,West,Diamondbacks,0,33,1500000,1080645,0.8%
+Clayton Kershaw,97,2018,NL,West,Dodgers,1,30,35571428,35571428,17.8%
+Clayton Kershaw,98,2017,NL,West,Dodgers,1,29,35571428,35571428,13.7%
+Clayton Kershaw,99,2016,NL,West,Dodgers,1,28,34571428,34571428,12.9%
+Clayton Richard,100,2017,NL,West,Padres,0,33,2750000,2750000,3.5%
+Clayton Richard,101,2018,NL,West,Padres,0,34,3500000,3500000,3.4%
+Cody Reed,102,2016,NL,Central,Reds,0,20,507500,246797,0.3%
+Colby Lewis,103,2016,AL,West,Rangers,1,36,6000000,6000000,3.7%
+Cole Hamels,104,2016,AL,West,Rangers,1,32,22500000,22500000,13.8%
+Cole Hamels,105,2017,AL,West,Rangers,0,33,22500000,22500000,13.8%
+Colin McHugh,106,2016,AL,West,Astros,0,29,529000,529000,0.5%
+Colin McHugh,107,2017,AL,West,Astros,1,30,3850000,3850000,2.8%
+Corey Kluber,108,2016,AL,Central,Indians,1,30,4700000,4700000,4.4%
+Corey Kluber,109,2017,AL,Central,Indians,1,31,7950000,7950000,6.0%
+Corey Kluber,110,2018,AL,Central,Indians,1,32,10700000,10700000,7.5%
+Corey Oswalt,111,2018,NL,East,Mets,0,24,545000,287140,0.2%
+Dallas Keuchel,112,2016,AL,West,Astros,0,28,7250000,7250000,7.0%
+Dallas Keuchel,113,2017,AL,West,Astros,1,29,9150000,9150000,6.6%
+Dallas Keuchel,114,2018,AL,West,Astros,1,30,13200000,13200000,8.1%
+Dan Straily,115,2018,NL,East,Marlins,0,29,3375000,3375000,3.7%
+Dan Straily,116,2017,NL,East,Marlins,0,28,552100,552100,0.5%
+Dan Straily,117,2016,NL,Central,Reds,0,27,512100,512100,0.6%
+Daniel Gossett,118,2017,AL,West,Athletics,0,24,535000,260147,0.4%
+Daniel Mengden,119,2016,AL,West,Athletics,0,23,507500,207975,0.3%
+Daniel Mengden,120,2018,AL,West,Athletics,2,25,547500,418048,0.5%
+Daniel Norris,121,2016,AL,Central,Tigers,0,23,514500,340131,0.2%
+Daniel Norris,122,2017,AL,Central,Tigers,0,24,545500,545500,0.3%
+Danny Duffy,123,2016,AL,Central,Royals,0,27,4225000,4225000,3.0%
+Danny Duffy,124,2017,AL,Central,Royals,0,28,5000000,5000000,3.4%
+Danny Duffy,125,2018,AL,Central,Royals,0,29,14000000,14000000,10.8%
+Danny Salazar,126,2016,AL,Central,Indians,1,26,536200,536200,0.5%
+Danny Salazar,127,2017,AL,Central,Indians,1,27,3400000,3400000,2.6%
+David Hess,128,2018,AL,East,Orioles,0,24,545000,342810,0.3%
+David Price,129,2016,AL,East,Red Sox,1,30,30000000,30000000,14.4%
+David Price,130,2017,AL,East,Red Sox,1,31,30000000,30000000,14.3%
+David Price,131,2018,AL,East,Red Sox,1,32,30000000,30000000,13.2%
+Dereck Rodriguez ,132,2018,NL,West,Giants,0,26,545000,369180,0.2%
+Derek Holland,133,2016,AL,West,Rangers,1,29,10000000,10000000,6.1%
+Derek Holland,134,2017,AL,Central,White Sox,0,30,6000000,6000000,7.0%
+Derek Holland ,135,2018,NL,West,Giants,0,31,1750000,1750000,0.9%
+Dillon Gee,136,2016,AL,Central,Royals,0,30,2000000,2000000,1.4%
+Dinelson Lamet ,137,2017,NL,West,Padres,0,24,535000,379990,0.5%
+Domingo German,138,2018,AL,East,Yankees,1,25,548225,347746,0.2%
+Doug Fister,139,2016,AL,West,Astros,0,32,11000000,11000000,10.7%
+Doug Fister,140,2018,AL,West,Rangers,0,34,3500000,3500000,2.5%
+Doug Fister,141,2017,AL,East,Red Sox,1,33,2200000,2200000,1.1%
+Drew Pomeranz,142,2017,AL,East,Red Sox,1,28,4450000,4450000,2.1%
+Drew Pomeranz,143,2018,AL,East,Red Sox,1,29,8500000,8500000,3.7%
+Drew Smyly,144,2016,AL,East,Rays,0,27,3750000,3750000,5.9%
+Dylan Bundy,145,2016,AL,East,Orioles,2,23,1800000,1800000,1.2%
+Dylan Bundy,146,2017,AL,East,Orioles,0,24,1640000,1640000,0.9%
+Dylan Bundy,147,2018,AL,East,Orioles,0,25,1640000,1640000,1.3%
+Dylan Covey,148,2017,AL,Central,White Sox,0,25,535000,535000,0.6%
+Dylan Covey,149,2018,AL,Central,White Sox,0,26,545000,398480,0.6%
+Edinson Volquez,150,2017,NL,East,Marlins,0,33,9000000,9000000,8.1%
+Edinson Volquez,151,2016,AL,Central,Royals,0,32,9500000,9500000,6.7%
+Eduardo Rodriguez,152,2016,AL,East,Red Sox,1,23,521000,241995,0.1%
+Eduardo Rodriguez,153,2017,AL,East,Red Sox,1,24,584500,584500,0.3%
+Eduardo Rodriguez,154,2018,AL,East,Red Sox,1,25,2375000,2375000,1.0%
+Edwin Jackson,155,2018,AL,West,Athletics,2,34,1500000,790370,1.0%
+Erasmo Ramirez,156,2018,AL,West,Mariners,0,28,4200000,4200000,2.6%
+Eric Lauer ,157,2018,NL,West,Padres,0,23,545000,468800,0.5%
+Eric Skoglund,158,2018,AL,Central,Royals,0,25,545000,545000,0.4%
+Erick Fedde,159,2018,NL,East,Nationals,0,25,545000,325230,0.2%
+Ervin Santana,160,2016,AL,Central,Twins,0,33,13500000,13500000,13.9%
+Ervin Santana,161,2017,AL,Central,Twins,1,34,13500000,13500000,11.2%
+Felix Hernandez,162,2016,AL,West,Mariners,0,30,25857142,25857142,17.7%
+Felix Hernandez,163,2017,AL,West,Mariners,0,31,26857142,26857142,16.6%
+Felix Hernandez,164,2018,AL,West,Mariners,0,32,26857142,26857142,16.7%
+Felix Pena,165,2018,AL,West,Angels,0,28,545000,345740,0.2%
+Fernando Romero,166,2018,AL,Central,Twins,0,23,545000,158220,
+Francisco Liriano,167,2018,AL,Central,Tigers,0,34,4000000,4000000,3.1%
+Frankie Montas,168,2018,AL,West,Athletics,2,25,545000,208030,0.3%
+Freddy Peralta ,169,2018,NL,Central,Brewers,1,22,545000,468800,0.4%
+Garrett Richards,170,2018,AL,West,Angels,0,30,7300000,7300000,4.2%
+German Marquez ,171,2018,NL,West,Rockies,2,23,550000,550000,0.4%
+German Marquez ,172,2017,NL,West,Rockies,2,22,537000,489978,0.4%
+Gerrit Cole,173,2017,NL,Central,Pirates,0,26,3750000,3750000,3.8%
+Gerrit Cole,174,2016,NL,Central,Pirates,0,25,548000,548000,0.6%
+Gerrit Cole,175,2018,AL,West,Astros,1,27,6750000,6750000,4.1%
+Gio Gonzalez,176,2017,NL,East,Nationals,1,31,12000000,12000000,6.6%
+Gio Gonzalez,177,2016,NL,East,Nationals,1,30,12100000,12100000,8.7%
+Heath Fillmyer,178,2018,AL,Central,Royals,0,24,545000,304720,0.2%
+Hector Santiago,179,2017,AL,Central,Twins,1,29,8000000,8000000,6.6%
+Hisashi Iwakuma,180,2016,AL,West,Mariners,0,35,13500000,13500000,9.2%
+Homer Bailey,181,2018,NL,Central,Reds,0,32,21000000,21000000,20.9%
+Homer Bailey,182,2017,NL,Central,Reds,0,31,19000000,19000000,19.7%
+Hyun-Jin Ryu,183,2018,NL,West,Dodgers,1,31,7833333,7833333,3.9%
+Hyun-Jin Ryu,184,2017,NL,West,Dodgers,1,30,7833333,7833333,3.0%
+Ian Kennedy,185,2016,AL,Central,Royals,0,31,7500000,7500000,5.3%
+Ian Kennedy,186,2017,AL,Central,Royals,0,32,13500000,13500000,9.1%
+Ian Kennedy,187,2018,AL,Central,Royals,0,33,16000000,16000000,12.3%
+Ivan Nova,188,2018,NL,Central,Pirates,0,31,9416666,9416666,10.4%
+Ivan Nova,189,2017,NL,Central,Pirates,0,30,8416666,8416666,8.6%
+Ivan Nova,190,2016,NL,Central,Pirates,0,29,4100000,1411475,1.4%
+J.A Happ,191,2016,AL,East,Blue Jays,2,33,10000000,10000000,6.6%
+J.A Happ,192,2017,AL,East,Blue Jays,0,34,13000000,13000000,7.4%
+Jack Flaherty ,193,2018,NL,Central,Cardinals,0,22,545000,433640,0.3%
+Jacob deGrom,194,2018,NL,East,Mets,0,30,7400000,7400000,4.9%
+Jacob deGrom,195,2017,NL,East,Mets,0,29,4050000,4050000,2.8%
+Jacob deGrom,196,2016,NL,East,Mets,0,28,607000,607000,0.4%
+Jaime Barria,197,2018,AL,West,Angels,0,21,545000,398480,0.2%
+Jaime Garcia,198,2016,NL,Central,Cardinals,0,29,11500000,11500000,7.7%
+Jake Arrieta,199,2018,NL,East,Phillies,0,32,30000000,30000000,28.8%
+Jake Arrieta,200,2017,NL,Central,Cubs,1,31,15637500,15637500,9.1%
+Jake Arrieta,201,2016,NL,Central,Cubs,1,30,10700000,10700000,5.8%
+Jake Farria,202,2017,AL,East,Rays,0,23,535000,330299,0.4%
+Jake Farria,203,2018,AL,East,Rays,0,24,555000,498328,0.7%
+Jake Odorizzi,204,2016,AL,East,Rays,0,26,520700,520700,0.8%
+Jake Odorizzi,205,2017,AL,East,Rays,0,27,4100000,4100000,5.3%
+Jake Odorizzi,206,2018,AL,Central,Twins,0,28,6300000,6300000,5.5%
+Jake Peavy,207,2016,NL,West,Giants,2,35,15000000,15000000,8.4%
+Jake Thompson,208,2016,NL,East,Phillies,0,22,507500,160834,0.2%
+Jakob Junis,209,2017,AL,Central,Royals,0,24,535000,242609,0.2%
+Jakob Junis,210,2018,AL,Central,Royals,0,25,554250,554250,0.4%
+James Paxton,211,2016,AL,West,Mariners,0,27,507500,343852,0.2%
+James Paxton,212,2017,AL,West,Mariners,0,28,2350000,2350000,1.5%
+James Paxton,213,2018,AL,West,Mariners,0,29,4900000,4900000,3.0%
+James Shields,214,2017,AL,Central,White Sox,0,35,21000000,10000000,11.6%
+James Shields,215,2018,AL,Central,White Sox,0,36,21000000,10000000,13.9%
+Jameson Taillon,216,2016,NL,Central,Pirates,0,24,507500,302257,0.3%
+Jameson Taillon ,217,2018,NL,Central,Pirates,0,26,571000,571000,0.6%
+Jameson Taillon ,218,2017,NL,Central,Pirates,0,25,555500,555500,0.6%
+Jason Hammel,219,2016,NL,Central,Cubs,1,33,9000000,9000000,4.9%
+Jason Hammel,220,2017,AL,Central,Royals,0,34,5000000,5000000,3.4%
+Jason Vargas,221,2018,NL,East,Mets,0,35,6000000,6000000,4.0%
+Jason Vargas,222,2017,AL,Central,Royals,0,34,8000000,8000000,5.4%
+JC Ramirez,223,2017,AL,West,Angels,0,28,550000,550000,0.3%
+Jeff Hoffman ,224,2017,NL,West,Rockies,2,24,535000,318607,0.2%
+Jeff Locke,225,2016,NL,Central,Pirates,0,28,3025000,3025000,3.0%
+Jeff Samardzija ,226,2017,NL,West,Giants,0,32,19800000,19800000,10.4%
+Jeff Samardzija ,227,2016,NL,West,Giants,2,31,10800000,10800000,6.1%
+Jerad Eickhoff,228,2017,NL,East,Phillies,0,26,552000,552000,0.5%
+Jerad Eickhoff,229,2016,NL,East,Phillies,0,25,516000,516000,0.5%
+Jered Weaver,230,2016,AL,West,Angels,0,33,20200000,20200000,11.6%
+Jeremy Hellickson,231,2018,NL,East,Nationals,0,31,2000000,2000000,1.1%
+Jeremy Hellickson,232,2017,NL,East,Phillies,0,30,11090711,11090711,10.7%
+Jeremy Hellickson,233,2016,NL,East,Phillies,0,29,7000000,7000000,6.7%
+Jesse Chavez,234,2017,AL,West,Angels,0,33,6550000,6550000,3.9%
+Jesse Hahn,235,2017,AL,West,Athletics,0,27,535000,254301,
+Jharel Cotton,236,2017,AL,West,Athletics,0,25,535000,485218,0.7%
+Jhoulys Chacin,237,2018,NL,Central,Brewers,1,30,8750000,8750000,8.0%
+Jhoulys Chacin,238,2017,NL,West,Padres,0,29,1750000,1750000,2.3%
+Jimmy Nelson,239,2016,NL,Central,Brewers,0,27,522300,522300,0.8%
+Jimmy Nelson ,240,2017,NL,Central,Brewers,0,28,547000,547000,0.8%
+Joe Biagini,241,2017,AL,East,Blue Jays,0,27,535000,464757,0.3%
+Joe Musgrove,242,2016,AL,West,Astros,0,23,507500,174699,0.2%
+Joe Musgrove,243,2017,AL,West,Astros,1,24,543400,510668,0.4%
+Joe Musgrove ,244,2018,NL,Central,Pirates,0,25,571000,571000,0.6%
+Joe Ross,245,2017,NL,East,Nationals,1,24,551000,433584,0.2%
+Joe Ross,246,2016,NL,East,Nationals,1,23,514400,514400,0.4%
+Joey Lucchesi ,247,2018,NL,West,Padres,0,25,545000,512750,0.5%
+John Lackey,248,2017,NL,Central,Cubs,1,38,16000000,16000000,9.3%
+John Lackey,249,2016,NL,Central,Cubs,1,37,16000000,16000000,8.7%
+Johnny Cueto,250,2017,NL,West,Giants,0,31,23500000,23500000,12.4%
+Johnny Cueto,251,2016,NL,West,Giants,2,30,17500000,17500000,9.8%
+Jon Gray,252,2016,NL,West,Rockies,0,24,509500,509500,0.5%
+Jon Gray ,253,2018,NL,West,Rockies,2,26,555000,513248,0.4%
+Jon Gray ,254,2017,NL,West,Rockies,2,25,540000,540000,0.4%
+Jon Lester,255,2018,NL,Central,Cubs,2,34,27500000,27500000,14.2%
+Jon Lester,256,2017,NL,Central,Cubs,1,33,25000000,25000000,14.5%
+Jon Lester,257,2016,NL,Central,Cubs,1,32,25000000,25000000,13.6%
+Jonathan Niese,258,2016,NL,Central,Pirates,0,29,5901640,5901640,5.9%
+Jordan Montgomery,259,2017,AL,East,Yankees,1,24,535000,435527,0.2%
+Jordan Zimmermann,260,2016,AL,Central,Tigers,0,30,18000000,18000000,9.0%
+Jordan Zimmermann,261,2017,AL,Central,Tigers,0,31,18000000,18000000,9.6%
+Jordan Zimmermann,262,2018,AL,Central,Tigers,0,32,24000000,24000000,18.3%
+Jorge De La Rosa,263,2016,NL,West,Rockies,0,35,12500000,12500000,11.6%
+Jose Berrios,264,2016,AL,Central,Twins,0,22,507500,205202,0.2%
+Jose Berrios,265,2017,AL,Central,Twins,1,23,535000,415066,0.3%
+Jose Berrios,266,2018,AL,Central,Twins,0,24,570000,570000,0.5%
+Jose Fernandez,267,2016,NL,East,Marlins,0,23,2800000,2800000,3.6%
+Jose Quintana,268,2018,NL,Central,Cubs,2,29,8850000,8850000,4.6%
+Jose Quintana,269,2016,AL,Central,White Sox,0,27,5400000,5400000,4.2%
+Jose Urena,270,2018,NL,East,Marlins,0,26,575000,575000,0.6%
+Jose Urena,271,2017,NL,East,Marlins,0,25,535000,535000,0.5%
+Jose Urena,272,2016,NL,East,Marlins,0,24,507500,277300,0.4%
+Josh Tomlin,273,2016,AL,Central,Indians,1,31,3000000,3000000,2.8%
+Josh Tomlin,274,2017,AL,Central,Indians,1,32,3000000,3000000,2.3%
+Julio Teheran,275,2018,NL,East,Braves,1,27,8166666,8166666,6.3%
+Julio Teheran,276,2017,NL,East,Braves,0,26,6466666,6466666,6.2%
+Julio Teheran,277,2016,NL,East,Braves,0,25,3466666,3466666,3.6%
+Julio Urias,278,2016,NL,West,Dodgers,1,19,507500,271754,0.1%
+Junior Guerra,279,2016,NL,Central,Brewers,0,31,507500,424269,0.7%
+Junior Guerra ,280,2018,NL,Central,Brewers,1,33,545000,509820,0.5%
+Junior Guerra ,281,2017,NL,Central,Brewers,0,32,546200,444765,0.7%
+Justin Nicolino,282,2016,NL,East,Marlins,0,24,507500,246797,0.3%
+Justin Verlander,283,2018,AL,West,Astros,1,35,28100000,20000000,12.2%
+Justin Verlander,284,2016,AL,Central,Tigers,0,33,28000000,28000000,14.0%
+Kendall Graveman,285,2016,AL,West,Athletics,0,25,512500,512500,0.6%
+Kendall Graveman,286,2017,AL,West,Athletics,0,26,545000,545000,0.7%
+Kenta Maeda,287,2018,NL,West,Dodgers,1,30,6125000,6125000,3.1%
+Kenta Maeda,288,2017,NL,West,Dodgers,1,29,7375000,7375000,2.9%
+Kenta Maeda,289,2016,NL,West,Dodgers,1,28,10375000,10375000,3.9%
+Kevin Gausman,290,2016,AL,East,Orioles,2,25,532000,532000,0.4%
+Kevin Gausman,291,2017,AL,East,Orioles,0,26,3550000,3550000,2.0%
+Kyle Freeland,292,2017,NL,West,Rockies,2,24,535000,535000,0.4%
+Kyle Freeland ,293,2018,NL,West,Rockies,2,25,550000,550000,0.4%
+Kyle Gibson,294,2016,AL,Central,Twins,0,28,587500,587500,0.6%
+Kyle Gibson,295,2017,AL,Central,Twins,1,29,2900000,2900000,2.4%
+Kyle Gibson,296,2018,AL,Central,Twins,0,30,4200000,4200000,3.6%
+Kyle Hendricks,297,2018,NL,Central,Cubs,2,28,4175000,4175000,2.2%
+Kyle Hendricks,298,2016,NL,Central,Cubs,1,26,541000,541000,0.3%
+Kyle Hendricks ,299,2017,NL,Central,Cubs,1,27,760500,760500,0.4%
+Lance Lynn,300,2017,NL,Central,Cardinals,0,30,8500000,8500000,5.9%
+Lance McCullers Jr,301,2016,AL,West,Astros,0,22,516700,516700,0.5%
+Lance McCullers Jr,302,2017,AL,West,Astros,1,23,548000,548000,0.4%
+Lance McCullers Jr,303,2018,AL,West,Astros,1,24,2450000,2450000,1.5%
+Logan Verett,304,2016,NL,East,Mets,0,26,514875,444612,0.3%
+Lucas Giolito,305,2018,AL,Central,White Sox,0,23,555000,555000,0.8%
+Lucas Sims,306,2017,NL,East,Braves,0,23,535000,181226,0.2%
+Luis Castillo ,307,2018,NL,Central,Reds,0,25,555000,555000,0.6%
+Luis Castillo ,308,2017,NL,Central,Reds,0,24,535000,295223,0.3%
+Luis Perdomo,309,2018,NL,West,Padres,0,25,566800,338217,0.3%
+Luis Perdomo,310,2016,NL,West,Padres,0,23,507500,507500,0.6%
+Luis Perdomo ,311,2017,NL,West,Padres,0,24,544300,544300,0.7%
+Luis Severino,312,2016,AL,East,Yankees,0,22,521300,304843,0.1%
+Luis Severino,313,2017,AL,East,Yankees,1,23,550975,550975,0.3%
+Luis Severino,314,2018,AL,East,Yankees,1,24,604975,604975,0.3%
+Luke Weaver ,315,2018,NL,Central,Cardinals,0,24,550800,512253,0.3%
+Luke Weaver ,316,2017,NL,Central,Cardinals,0,23,535000,175380,0.1%
+Madison Bumgarner,317,2018,NL,West,Giants,0,28,12000000,12000000,5.8%
+Madison Bumgarner,318,2017,NL,West,Giants,0,27,12200000,12200000,6.4%
+Madison Bumgarner,319,2016,NL,West,Giants,2,26,9975000,9975000,5.6%
+Marco Estrada,320,2016,AL,East,Blue Jays,2,32,11500000,11500000,7.6%
+Marco Estrada,321,2017,AL,East,Blue Jays,0,33,14500000,14500000,8.3%
+Marco Estrada,322,2018,AL,East,Blue Jays,0,34,13000000,13000000,8.6%
+Marco Gonzales,323,2018,AL,West,Mariners,0,26,550300,550300,0.3%
+Marcus Stroman,324,2016,AL,East,Blue Jays,2,25,515900,515900,0.3%
+Marcus Stroman,325,2017,AL,East,Blue Jays,0,26,3400000,3400000,1.9%
+Marcus Stroman,326,2018,AL,East,Blue Jays,0,27,6500000,6500000,4.3%
+Mark Leiter Jr.,327,2017,NL,East,Phillies,0,26,535000,391682,0.4%
+Martin Perez,328,2016,AL,West,Rangers,1,25,3150000,3150000,1.9%
+Martin Perez,329,2017,AL,West,Rangers,0,26,4650000,4650000,2.9%
+Martin Perez,330,2018,AL,West,Rangers,0,27,6000000,6000000,4.3%
+Masahiro Tanka,331,2016,AL,East,Yankees,0,27,22000000,22000000,10.0%
+Masahiro Tanka,332,2017,AL,East,Yankees,1,28,22000000,22000000,10.5%
+Masahiro Tanka,333,2018,AL,East,Yankees,1,29,22000000,22000000,12.2%
+Matt Andriese,334,2016,AL,East,Rays,0,26,507500,410404,0.6%
+Matt Andriese,335,2017,AL,East,Rays,0,27,535000,535000,0.7%
+Matt Cain,336,2017,NL,West,Giants,0,32,20833334,20833334,11.0%
+Matt Cain,337,2016,NL,West,Giants,2,31,20833333,20833333,11.7%
+Matt Garza,338,2017,NL,Central,Brewers,0,33,12500000,12500000,18.1%
+Matt Garza,339,2016,NL,Central,Brewers,0,32,12500000,12500000,20.1%
+Matt Harvey,340,2017,NL,East,Mets,0,28,5125000,5125000,3.6%
+Matt Harvey,341,2016,NL,East,Mets,0,27,4325000,4325000,2.9%
+Matt Koch ,342,2018,NL,West,Diamondbacks,0,27,545000,332300,0.2%
+Matt Moore,343,2017,NL,West,Giants,0,28,7000000,7000000,3.7%
+Matt Shoemaker,344,2016,AL,West,Angels,0,29,530000,501008,0.3%
+Matt Shoemaker,345,2017,AL,West,Angels,0,30,3325000,3325000,2.0%
+Matt Wisler,346,2016,NL,East,Braves,0,23,507500,435361,0.5%
+Matthew Boyd,347,2016,AL,Central,Tigers,0,25,507500,280073,0.1%
+Matthew Boyd,348,2017,AL,Central,Tigers,0,26,544200,416360,0.2%
+Matthew Boyd,349,2018,AL,Central,Tigers,0,27,562000,562000,0.4%
+Max Scherzer,350,2018,NL,East,Nationals,0,33,22242857,22242857,12.3%
+Max Scherzer,351,2017,NL,East,Nationals,1,32,22142857,22142857,12.2%
+Max Scherzer,352,2016,NL,East,Nationals,1,31,22242857,22242857,16.0%
+Michael Fulmer,353,2016,AL,Central,Tigers,0,23,507500,435396,0.2%
+Michael Fulmer,354,2017,AL,Central,Tigers,0,24,551900,551900,0.3%
+Michael Fulmer,355,2018,AL,Central,Tigers,0,25,575200,575200,0.4%
+Michael Pineda,356,2016,AL,East,Yankees,0,27,4300000,4300000,2.0%
+Michael Pineda,357,2017,AL,East,Yankees,1,28,7400000,7400000,3.5%
+Michael Wacha,358,2018,NL,Central,Cardinals,0,27,5300000,5300000,3.2%
+Michael Wacha,359,2017,NL,Central,Cardinals,0,26,2775000,2775000,1.9%
+Michael Wacha,360,2016,NL,Central,Cardinals,0,25,539000,539000,0.4%
+Miguel Gonzalez,361,2016,AL,Central,White Sox,0,32,507500,413177,0.3%
+Mike Clevinger,362,2016,AL,Central,Indians,1,25,507500,216294,0.2%
+Mike Clevinger,363,2017,AL,Central,Indians,1,26,535000,388759,0.3%
+Mike Clevinger,364,2018,AL,Central,Indians,1,27,558500,558500,0.4%
+Mike Fiers,365,2016,AL,West,Astros,0,31,524100,524100,0.5%
+Mike Fiers,366,2017,AL,West,Astros,1,32,3450000,3450000,2.5%
+Mike Foltynewicz,367,2018,NL,East,Braves,1,26,2200000,2200000,1.7%
+Mike Foltynewicz,368,2017,NL,East,Braves,0,25,544000,544000,0.5%
+Mike Foltynewicz,369,2016,NL,East,Braves,0,24,507500,427042,0.4%
+Mike Leake,370,2017,NL,Central,Cardinals,0,29,12295089,12295089,8.5%
+Mike Leake,371,2018,AL,West,Mariners,0,30,17000000,11000000,6.8%
+Mike Leake ,372,2016,NL,Central,Cardinals,0,28,12000000,12000000,8.0%
+Mike Minor,373,2018,AL,West,Rangers,0,30,8333333,8333333,5.9%
+Mike Montgomery,374,2018,NL,Central,Cubs,2,28,611250,611250,0.3%
+Mike Montgomery,375,2017,NL,Central,Cubs,1,28,570500,570500,0.3%
+Mike Pelfrey,376,2016,AL,Central,Tigers,0,32,8000000,8000000,4.0%
+Mike Pelfrey,377,2017,AL,Central,White Sox,0,33,535000,476449,0.6%
+Mike Wright,378,2016,AL,East,Orioles,2,26,510500,479880,0.3%
+Miles Mikolas,379,2018,NL,Central,Cardinals,0,29,7750000,7750000,4.7%
+Nate Karns,380,2016,AL,West,Mariners,0,28,523700,523700,0.4%
+Nathan Eovaldi,381,2016,AL,East,Yankees,0,26,5600000,5600000,2.5%
+Nick Kingham ,382,2018,NL,Central,Pirates,0,25,545000,263700,0.3%
+Nick Martinez,383,2017,AL,West,Rangers,0,26,540590,366296,0.2%
+Nick Pivetta,384,2018,NL,East,Phillies,0,25,551000,551000,0.5%
+Nick Pivetta,385,2017,NL,East,Phillies,0,24,535000,374144,0.4%
+Nick Tropeano,386,2016,AL,West,Angels,0,25,507500,468637,0.3%
+Nick Tropeano,387,2018,AL,West,Angels,0,27,545000,503960,0.3%
+Noah Syndergaard,388,2018,NL,East,Mets,0,25,2975000,2975000,2.0%
+Noah Syndergaard,389,2016,NL,East,Mets,0,23,535375,535375,0.4%
+Pablo Lopez,390,2018,NL,East,Marlins,0,22,545000,272490,0.3%
+Parker Bridwell,391,2017,AL,West,Angels,0,25,535000,233840,0.1%
+Patrick Corbin,392,2018,NL,West,Diamondbacks,0,29,7500000,7500000,5.2%
+Patrick Corbin,393,2017,NL,West,Diamondbacks,2,28,3950000,3950000,3.9%
+Patrick Corbin,394,2016,NL,West,Diamondbacks,0,27,2525000,2525000,2.6%
+Paul Blackburn,395,2017,AL,West,Athletics,0,23,535000,271839,0.4%
+R.A Dickey,396,2016,AL,East,Blue Jays,2,41,12000000,12000000,7.9%
+R.A.Dickey,397,2017,NL,East,Braves,0,42,7500000,7500000,7.1%
+Rafael Montero,398,2017,NL,East,Mets,0,26,541400,440742,0.3%
+Reynaldo Lopez,399,2018,AL,Central,White Sox,0,24,555000,555000,0.8%
+Rich Hill,400,2018,NL,West,Dodgers,1,38,16666666,16666666,8.4%
+Rich Hill,401,2017,NL,West,Dodgers,1,37,12666666,12666666,4.9%
+Rick Porcello,402,2016,AL,East,Red Sox,1,27,20125000,20125000,9.7%
+Rick Porcello,403,2017,AL,East,Red Sox,1,28,20125000,20125000,9.6%
+Rick Porcello,404,2018,AL,East,Red Sox,1,29,21125000,21125000,9.3%
+Ricky Nolasco,405,2017,AL,West,Angels,0,34,12000000,8000000,4.8%
+Robbie Erlin,406,2018,NL,West,Padres,0,27,650000,650000,0.6%
+Robbie Ray,407,2018,NL,West,Diamondbacks,0,26,3950000,3950000,2.8%
+Robbie Ray,408,2016,NL,West,Diamondbacks,0,24,521000,521000,0.5%
+Robbie Ray ,409,2017,NL,West,Diamondbacks,2,25,570400,570400,0.6%
+Robert Gsellman,410,2017,NL,East,Mets,0,23,541750,94720,0.1%
+Robert Stephenson,411,2017,NL,Central,Reds,0,24,535000,377067,0.4%
+Ross Stripling,412,2018,NL,West,Dodgers,1,28,555000,555000,0.3%
+Ross Stripling,413,2016,NL,West,Dodgers,1,26,507500,316112,0.1%
+Rubby De La Rosa,414,2016,NL,West,Diamondbacks,0,27,2350000,2350000,2.4%
+Ryan Borucki,415,2018,AL,East,Blue Jays,0,24,545000,254910,0.2%
+Ryan Vogelsong,416,2016,NL,Central,Pirates,0,38,3225000,3225000,3.2%
+Sal Romano ,417,2018,NL,Central,Reds,0,24,545000,545000,0.5%
+Sal Romano ,418,2017,NL,Central,Reds,0,23,535000,230917,0.2%
+Sam Gaviglio,419,2018,AL,East,Blue Jays,0,28,545000,418990,0.3%
+Scott Feldman ,420,2017,NL,Central,Reds,0,34,3000000,3000000,3.1%
+Scott Kazmir,421,2016,NL,West,Dodgers,1,32,12666666,12666666,4.7%
+Sean Manaea,422,2016,AL,West,Athletics,0,24,507500,435361,0.5%
+Sean Manaea,423,2017,AL,West,Athletics,0,25,537500,537500,0.7%
+Sean Manaea,424,2018,AL,West,Athletics,2,26,550000,550000,0.7%
+Sean Newcomb,425,2018,NL,East,Braves,1,25,555000,555000,0.4%
+Sean Newcomb,426,2017,NL,East,Braves,0,24,535000,330299,0.3%
+Seth Lugo,427,2017,NL,East,Mets,0,27,543500,543500,0.4%
+Shane Bieber,428,2018,AL,Central,Indians,1,23,545000,284210,0.2%
+Shelby Miller,429,2016,NL,West,Diamondbacks,0,25,4350000,4350000,4.4%
+Shohei Ohtani,430,2018,AL,West,Angels,0,23,545000,545000,0.3%
+Sonny Gray,431,2016,AL,West,Athletics,0,26,527500,527500,0.6%
+Sonny Gray,432,2018,AL,East,Yankees,1,28,6500000,6500000,3.6%
+Stephen Strasburg,433,2018,NL,East,Nationals,0,29,18333333,18333333,10.1%
+Stephen Strasburg,434,2017,NL,East,Nationals,1,28,18333333,18333333,10.1%
+Stephen Strasburg,435,2016,NL,East,Nationals,1,27,10400000,10400000,7.5%
+Steven Matz,436,2018,NL,East,Mets,0,27,577000,577000,0.4%
+Steven Matz,437,2017,NL,East,Mets,0,26,562250,562250,0.4%
+Steven Matz,438,2016,NL,East,Mets,0,25,515750,515750,0.4%
+Steven Wright,439,2016,AL,East,Red Sox,1,31,514500,514500,0.3%
+Taijuan Walker,440,2017,NL,West,Diamondbacks,2,24,2250000,2250000,2.2%
+Taijuan Walker,441,2016,AL,West,Mariners,0,23,528600,485352,0.3%
+Tanner Roark,442,2018,NL,East,Nationals,0,31,6475000,6475000,3.6%
+Tanner Roark,443,2017,NL,East,Nationals,1,30,4315000,4315000,2.4%
+Tanner Roark,444,2016,NL,East,Nationals,1,29,543400,543400,0.4%
+Tim Adleman,445,2016,NL,Central,Reds,0,28,507500,390993,0.4%
+Tim Adleman ,446,2017,NL,Central,Reds,0,29,535000,493987,0.5%
+Tom Koehler,447,2016,NL,East,Marlins,0,30,3500000,3500000,4.5%
+Tommy Milone,448,2016,AL,Central,Twins,0,29,4500000,4500000,4.6%
+Trevor Bauer,449,2016,AL,Central,Indians,1,25,1697500,1697500,1.6%
+Trevor Bauer,450,2017,AL,Central,Indians,1,26,3550000,3550000,2.7%
+Trevor Bauer,451,2018,AL,Central,Indians,1,27,6525000,6525000,4.6%
+Trevor Cahil,452,2018,AL,West,Athletics,2,30,1500000,1500000,1.9%
+Trevor Richards,453,2018,NL,East,Marlins,0,25,545000,416060,0.5%
+Trevor Williams ,454,2018,NL,Central,Pirates,0,26,569500,569500,0.6%
+Trevor Williams ,455,2017,NL,Central,Pirates,0,25,544000,544000,0.6%
+Ty Blach ,456,2018,NL,West,Giants,0,27,565000,565000,0.3%
+Ty Blach ,457,2017,NL,West,Giants,0,26,536500,536500,0.3%
+Tyler Anderson,458,2017,NL,West,Rockies,2,27,540000,540000,0.4%
+Tyler Anderson,459,2016,NL,West,Rockies,0,26,509500,317376,0.3%
+Tyler Anderson ,460,2018,NL,West,Rockies,2,28,555000,555000,0.4%
+Tyler Chatwood,461,2018,NL,Central,Cubs,2,28,12500000,12500000,6.4%
+Tyler Chatwood,462,2017,NL,West,Rockies,2,27,4400000,4400000,3.2%
+Tyler Chatwood,463,2016,NL,West,Rockies,0,26,1250000,1250000,1.2%
+Tyler Duffey,464,2016,AL,Central,Twins,0,25,507500,421496,0.4%
+Tyler Glasnow ,465,2017,NL,Central,Pirates,0,23,541000,268996,0.3%
+Tyler Mahle ,466,2018,NL,Central,Reds,0,23,545000,451220,0.5%
+Tyler Skaggs,467,2016,AL,West,Angels,0,24,515000,515000,0.3%
+Tyler Skaggs,468,2017,AL,West,Angels,0,25,555000,555000,0.3%
+Tyler Skaggs,469,2018,AL,West,Angels,0,26,1875000,1875000,1.1%
+Tyler Wilson,470,2016,AL,East,Orioles,2,26,511500,385710,0.3%
+Ubaldo Jimenez,471,2016,AL,East,Orioles,2,32,13000000,13000000,8.7%
+Ubaldo Jimenez,472,2017,AL,East,Orioles,0,33,13500000,13500000,7.7%
+Vance Worley,473,2017,NL,East,Marlins,0,29,535000,394605,0.4%
+Vince Velasquez,474,2018,NL,East,Phillies,0,26,559000,559000,0.5%
+Vince Velasquez,475,2017,NL,East,Phillies,0,25,547000,547000,0.5%
+Vince Velasquez,476,2016,NL,East,Phillies,0,24,516000,516000,0.5%
+Wade Leblanc,477,2018,AL,West,Mariners,0,33,700000,700000,0.4%
+Wade Miley,478,2017,AL,East,Orioles,0,30,8916668,8916668,5.1%
+Wade Miley ,479,2018,NL,Central,Brewers,1,31,2500000,2500000,2.3%
+Walker Buehler ,480,2018,NL,West,Dodgers,1,23,545000,512750,0.3%
+Wei-Yin Chen,481,2018,NL,East,Marlins,0,33,10000000,10000000,10.9%
+Wei-Yin Chen,482,2016,NL,East,Marlins,0,31,12500000,12500000,16.1%
+William Perez,483,2016,NL,East,Braves,0,25,511250,452628,0.5%
+Wily Peralta,484,2016,NL,Central,Brewers,0,27,2800000,2800000,4.5%
+Yefry Ramirez,485,2018,AL,East,Orioles,0,24,545000,272490,0.2%
+Yordano Ventura,486,2016,AL,Central,Royals,0,25,1200000,1200000,0.9%
+Yovani Gallardo,487,2017,AL,West,Mariners,0,31,11000000,9000000,5.6%
+Yovani Gallardo,488,2016,AL,East,Orioles,2,30,9000000,9000000,6.0%
+Yu Darvish,489,2016,AL,West,Rangers,1,29,10800000,10800000,6.6%
+Zach Davies,490,2016,NL,Central,Brewers,0,23,507500,438134,0.7%
+Zach Davies ,491,2017,NL,Central,Brewers,0,24,546200,546200,0.8%
+Zach Eflin,492,2018,NL,East,Phillies,0,24,545000,421920,0.4%
+Zach Eflin,493,2017,NL,East,Phillies,0,23,537000,302202,0.3%
+Zach Eflin,494,2016,NL,East,Phillies,0,22,507500,307863,0.3%
+Zack Godley ,495,2018,NL,West,Diamondbacks,0,28,579200,579200,0.4%
+Zack Godley ,496,2017,NL,West,Diamondbacks,2,27,535000,409220,0.4%
+Zack Greinke ,497,2018,NL,West,Diamondbacks,0,34,34000000,34000000,23.7%
+Zack Greinke ,498,2017,NL,West,Diamondbacks,2,33,34000000,34000000,33.1%
+Zack Greinke ,499,2016,NL,West,Diamondbacks,0,32,34000000,34000000,34.7%
+Zack Wheeler,500,2018,NL,East,Mets,0,28,1900000,1900000,1.3%
+Zack Wheeler,501,2017,NL,East,Mets,0,27,800000,800000,0.6%
