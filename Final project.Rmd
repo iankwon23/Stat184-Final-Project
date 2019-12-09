@@ -51,9 +51,25 @@ priceanderson2018<-
   ylab("Payroll Salary ($)")+
   geom_bar(stat= "identity" )
 
-priceanderson2018  
+priceanderson2018
+```
 
-#Baseball seems to have differences when it comes to the ability of spending money per teams. 
+```{r}
+#The Oakland Athletics managed to pay the whole team about 80.315 million dollars in 2018. If the Athletics were to pay David Price his salary, let's see how much percentage of the salary David Price would have eaten up. 
+
+salarypercent <- function(oakland) {
+  diffsalary <- (oakland / 80315000)
+  return(diffsalary)
+}
+salarypercent(30000000)
+
+#David Price would have eaten up 37.35% of the team's salary. Let's check how much salary percentage Brett Anderson cost.
+```
+
+```{r}
+salarypercent(4000000)
+
+#Brett Anderson had only eaten up 4% of the team's salary yet was the highest paid pitcher on the team. Baseball seems to have major differences when it comes to the ability of spending money per teams. 
 
 ```
 
@@ -166,13 +182,16 @@ jeredweaver2<-
   
 jeredweaver2
 
-tenmillion<-
+tenmillionplayers<-
   pitchersalary%>%
-  filter(Payrollsalary == 10000000 & GS >26)%>%
+  filter(Payrollsalary == 10000000 & GS >26)
+tenmillionplayers
+
+tenmillion<-
+  tenmillionplayers%>%
   summarise(ERAavg = mean(ERA), totalwins = sum(ProjectedFull))
 
 tenmillion
-
 
 
 #For simplicity sakes, we look at two pitchers who were paid 10 million dollars and also healthy to start more than 26 games that season. Andrew Cashner and J.A Happ meet the standards and have both produced a ERA below 3.5 and ProjectedFull of 38.6 together. Basically, for the same amount of money, the Angels could have recorded 24.9 more team wins for the same money.
@@ -189,7 +208,7 @@ SummaryStats <-
             se = sd(Payrollsalary) / sqrt(n()))%>%
   mutate(top = avg + 2 * se,
          bottom = avg - 2 * se)
-SummaryStats
+
 
 SummaryStats %>%
   ggplot(aes(x = reorder(Team, desc(avg)), y = avg)) +
@@ -199,10 +218,13 @@ SummaryStats %>%
                     ymax = top, 
                     ymin = bottom), width=0.5) +
   theme(axis.text.x = element_text(angle = 30, hjust=1))
+
+#The Los Angeles Angels (LAA) are ranked 18th out of 30 teams in the average spend of money of starting pitchers. As we noticed from the earlier 'angelspitchers' dotplot, there is quite a fluctuation in the range of money they spend as well according to the errorbar. For example, Cleveland (CLE) spend more on average payroll salary but yet error bar suggests they have more of a condensed range of money spent on their pitchers.
+
 ```
 
 ```{r}
-# The Los Angeles Angels (LAA) are ranked 18th out of 30 teams in the average spend of money of starting pitchers. As we noticed from the earlier 'angelspitchers' dotplot, there is quite a fluctuation in the range of money they spend as well according to the errorbar. For example, Cleveland (CLE) spend more on average payroll salary but yet error bar suggests they have more of a condensed range of money spent on their pitchers. Let's check if they had made the playoffs in the past 3 years. 
+# As we had checked the boxplots above, let's check if the Angels and the Indians have made the playoffs in the past 3 years. Since they had spent similar amount of money into their starting pitching, we might assume that they had similar team results as well. 
 
 laacle<-
   pitchersalary%>%
@@ -217,7 +239,7 @@ laacle
 
 #Since 1 is making playoffs and 0 is not making playoffs, we know CLE has made the playoffs during 2016 -2018 while LAA has not. 
 
-#While spending on starting pitchers were relatively same for CLE and LAA, CLE made the playoffs all the time from 2016 to 2018 while LAA had not made so. Basically, the Angels were not spending enough money and also not spending their money wisely. 
+#While spending on starting pitchers were relatively same for CLE and LAA, CLE made the playoffs all the time from 2016 to 2018 while LAA had not made so. It may be the Angels were not spending enough money and also not spending their money wisely. Or, it also may be that Cleveland are condensing their salary to a few better quality pitchers in a wise manner while the Angels are diversifying their salary to a lot of not quality pitchers. 
 ```
 
 ```{r}
@@ -225,23 +247,63 @@ laacle
 
 finalrotation<-
   pitchersalary%>%
-  filter(Payrollsalary <= 10000000 & GS >26 & ERA <4)
+  filter(Payrollsalary <= 10000000 & GS >26 & ERA <4 & Year == 2016)
 
 finalrotation
 
 require(data.table)
-d <- data.table(fiftymillion, key="ERA")
+d <- data.table(finalrotation, key="ERA")
 d[, head(.SD), by=Payrollsalary]
 
-# In 2016, the Angels could have spent money on Kyle Hendricks, Noah Syndergaard, Tanner Roark, Zach davies and Jose Fernandez as their starting pitchers. 
+nrow(d)
 
+# In 2016, the Angels could have spent money on 22 different pitchers.We list the name of vectors and make the function randomly choose 5 pitchers for us. 
 
-target <- c("267", "490" , "442", "388" , "297")
+e<-d%>%
+  select("PlayerID")
+e
+
+e<- as.character(e)
+target
+
+```
+
+```{r}
 finalrotation%>%
-  filter(PlayerID %in% target)%>%
+  filter(PlayerID %in% e)
   summarise(salary = sum(Payrollsalary), ERA = mean(ERA), Wins = sum(ProjectedFull))
-  
-# with that rotation, the rotation would have posted a 2.878 ERA and cumulate 101.3 wins! All that success for only about 17 million dollars. 
+finalrotation
 
+sample(target, 5)
   
+  
+target <- c("Aaron Nola", "Aaron Sanchez", "Bartolo Colon", "Brandon Finnegan", "Chris Sale", "Chris Tillman", "Corey Kluber", "Dan Straily", "Ian Kennedy", "J.A Happ", "Jake Odorizzi", "Jason Hammel", "Jose Fernandez", "Jose Quintana", "Julio Teheran", "Kevin Gausman", "Kyle Hendricks", "Matt Shoemaker", "Noah Syndergaard", "Tanner Roark", "Tyler Chatwood", "Zach Davies")
+
+#With the code below, we find the mean of stats we could get from these players. 
+finalrotation%>%
+  filter(Player %in% (target))%>%
+  summarise(salary = mean(Payrollsalary), ERA = mean(ERA), Wins = mean(ProjectedFull))
+```
+```{r}
+# With the code below, we can generate a random 5 man rotation within the budget.
+
+finalrotation%>%
+  filter(Player %in% sample(target, 5))%>%
+  summarise(salary = mean(Payrollsalary), ERA = mean(ERA), Wins = mean(ProjectedFull))
+
+```  
+  
+```{r}  
+# with the code below, we can check how the Angels' starting rotation pitched in 2016. 
+
+pitchersalary%>%
+  filter(Year == "2016" & Team == "LAA")%>%
+  summarise(salary = mean(Payrollsalary), ERA = mean(ERA), Wins = mean(ProjectedFull))
+
+
+```
+
+```{r}
+# With about similar money spent on each players, the Angels could have ended up with better quality pitchers with lower ERA and higher number of Wins brought to the team. The Angels and any other teams that have not spent money enough and efficiently may as well check on the list of players depending on their budget to create a possible optimal rotation which may make the team go to the playoffs. 
+
 ```

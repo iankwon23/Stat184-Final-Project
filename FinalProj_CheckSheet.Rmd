@@ -29,7 +29,8 @@ output:  html_notebook
 
 
 (A) .Rmd Line number(s) for general data wrangling: 
-41-45, 47-52, 67-70, 74-77, 79-81, 88-90, 97-105, 117-125, 136-139, 149-151, 163-165
+41-45, 47-52, 67-70, 74-77, 79-81, 88-90, 97-105, 117-125, 136-139, 149-151, 163-165, 169-172, 174-176
+188-194, 197-204, 213-221, 232-234
 
 (B) .Rmd Line number(s) for a join operation: 
 79-81 
@@ -41,10 +42,10 @@ output:  html_notebook
 88-90
 
 (E) .Rmd Line number(s) for use of reduction and/or transformation functions: 
-41-45, 47-52, 97-105, 117-125, 149-151
+41-45, 47-52, 97-105, 117-125, 149-151, 174-176, 188-194, 213-221
 
 (F) .Rmd Line number(s) for use of user-defined functions: 
-
+238-240, 
 
 (G) .Rmd Line number(s) for use of loops and/or control flow: 
 
@@ -59,13 +60,13 @@ output:  html_notebook
 
 
 (A) .Rmd Line number(s) for use of mulitple different geoms:  
-47-52(geom_bar), 97- 105(geom_line), 117-125 (geom_point)
+47-52(geom_bar), 97- 105(geom_line), 117-125 (geom_point), 197-204(bar, errorbar), 213-221(point)
 
 (B) .Rmd Line number(s) for use of multiple aesthetics:  
-47-52, 97-105 , 117-125
+47-52, 97-105 , 117-125, 197-204, 213-221
 
 (C) .Rmd Line number(s) for use of layered graphics:  
-
+197-204
 
 (D) .Rmd Line number(s) for use of leaflet maps:  
 
