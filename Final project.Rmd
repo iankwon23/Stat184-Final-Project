@@ -1,25 +1,26 @@
 ---
-title: "Spending optimization of a Major League Baseball starting rotation"
+title: "Proposing ideas to improve quality of starting rotation: Los Angeles Angels' version"
 author: "Ian Kwon"
 date: "12/4/2019"
 output: html_document
 ---
 
 ```{r}
+# Required packages to start
 library(dplyr)
 library(ggplot2)
+library(data.table)
 ```
 ### Intro
 
 ```{r}
-#A pro sports teams’ goal should be to win a championship. In baseball, to have a chance at the championship trophy, a team must make it into playoff baseball where only division winners are guaranteed a spot. Often teams believe that star players, especially good pitchers, can bring the advantage to the team’s possibility of winning the division. 
+#A pro sports teams’ goal should be to win a championship. In Major League Baseball (MLB) to have a chance at the championship trophy, teams first need to do well in the 'regular season' and make it into 'playoffs'. Teams believe that star players, especially good pitchers, can bring the advantage. To check if the following belief of whether good starting pitching will get a team close to a championship, we take unique yet diverse approaches for solution. 
 
 ```
 
 #Data Access
 ```{r}
 #reading data
-library(data.table)
 pitchers <- fread("C:/Users/iankw/Documents/Junior/Stat 184/Stat184-Final-Project/Finalprojectdataset.csv")
 salary <- fread("C:/Users/iankw/Documents/Junior/Stat 184/Stat184-Final-Project/Salary.csv")
 
@@ -33,9 +34,9 @@ View(pitchers)
 View(salary)
 #Salary data has 15 more variables compared to Data 1.The datasets seem to have some same names, some different names and some similar names too. It seems like we can later join later with the PlayerID number if necessary. 
 ```
-
+# Intro
 ```{r}
-#In order to win such championships, big market teams like the Boston Red Sox pay big name starting pitchers like David Price for 30 million dollars a year.However small market teams like the Oakland Athletics pay Brett Anderson for almost the tenth of what Price is paid annually.
+#In order to win such championships, big market teams like the Boston Red Sox pay big name starting pitchers like David Price for 30 million dollars a year. However small market teams like the Oakland Athletics pay not so famous pitchers like Brett Anderson for almost the tenth of what Price is paid annually.
 
 
 priceanderson <-
@@ -43,6 +44,8 @@ priceanderson <-
   select(Player,Year, Team,Payrollsalary)%>%
   filter(Player == "David Price" |Player == "Brett Anderson")
 priceanderson
+
+# Price had guaranteed 30 million dollars the past 3 years while Anderson had only guaranteed himself 4 million dollars in 2018.
 
 priceanderson2018<- 
   priceanderson%>%
@@ -52,10 +55,13 @@ priceanderson2018<-
   geom_bar(stat= "identity" )
 
 priceanderson2018
+
+# Comparing only the year when both the pitchers were paid (2018), the bar graph gives us how drastic the difference in salary it is for these two pitchers. 
+
 ```
 
 ```{r}
-#The Oakland Athletics managed to pay the whole team about 80.315 million dollars in 2018. If the Athletics were to pay David Price his salary, let's see how much percentage of the salary David Price would have eaten up. 
+#It must be the team's financial status that limits teams like Oakland to what they can pay. Let's check. The Oakland Athletics managed to pay the whole team about 80.315 million dollars in 2018 according to Spotrac. If the Athletics were to pay David Price his salary, let's see how much percentage of the salary David Price would have eaten up. 
 
 salarypercent <- function(oakland) {
   diffsalary <- (oakland / 80315000)
@@ -63,35 +69,36 @@ salarypercent <- function(oakland) {
 }
 salarypercent(30000000)
 
-#David Price would have eaten up 37.35% of the team's salary. Let's check how much salary percentage Brett Anderson cost.
+#David Price would have eaten up about 37.35% of the team's salary. Let's check how much salary percentage Brett Anderson cost.
 ```
 
 ```{r}
 salarypercent(4000000)
 
-#Brett Anderson had only eaten up 4% of the team's salary yet was the highest paid pitcher on the team. Baseball seems to have major differences when it comes to the ability of spending money per teams. 
+#Brett Anderson had only eaten up 4% of the team's salary yet was the highest paid pitcher on the team. Baseball seems to have major differences when it comes to the ability of spending money per teams. Unfortunately, these differences lead to different results as well. The Boston Red Sox won the 2018 World Series championship in 2018 with pitchers like David Price. Hence, we may want to check how approximately starting pitchers are paid and later check which pitchers for how much price, would teams want to acquire as well.  
 
 ```
 
 
-#Data Wrangling
+#The data
 ```{r}
-# We want to look at the pitching staff of MLB teams from 2016-2018 and get a better approximate of how MLB starting pitchers are getting paid. 
+# Now that we understand how diversify the pay is within MLB pitchers, we want to dig deeper at the pitching staff of MLB teams from 2016-2018 and get a better approximate of how MLB starting pitchers are getting paid. 
 
-# Good idea to start things off would be to select only the needed variables for each dataset. We want to know the 'players', 'PlayerID' to join 2 tables, the 'team' of the players, respective years, 'GS' = Games Started to know whether the pitcher was healthy, 'ERA' = Earned Run Average to evaluate how good the pitcher is in preventing runs, 'ProjectedFull' = To get an approximate of how many wins a pitcher can contribute to the team and 'Playoff' to note whether the team of the player made the playoffs or not. 
+# Good idea to start things off would be to select the assumed 'needed variables' for each dataset. We want to know the 'players', 'PlayerID' to join 2 tables, the 'team' of the players, respective years, 'GS' (= Games Started) to know whether the pitcher was healthy, 'ERA' (= Earned Run Average) to evaluate how good the pitcher is in preventing runs, 'ProjectedFull' ( to get an approximate of how many wins a pitcher can contribute to the team) and 'Playoff' (to note whether the team of the player made the playoffs or not.)
 
 pitchers2<-
   pitchers%>%
   select(Player,PlayerID,Team, Year,GS,ERA,ProjectedFull,Playoff)
 pitchers2
 
-#Similarly, we want the following variables. 'PlayerID' to join the two tables, 'Payrollsalary' to understand how much the player got paid and 'Payrollpercentage' in case we wonder how much percentage the player was eating up compared to the total payroll. 
+#Similarly, we want the following variables for the salary dataset. 'PlayerID' to join the two tables, 'Payrollsalary' to understand how much the player got paid and 'Payrollpercentage' in case we wonder how much percentage the player was eating up compared to the total payroll. 
 
 salary2<-
   salary%>%
   select(PlayerID,Payrollsalary,Payrollpercentage)
 salary2
 
+# joined table
 pitchersalary<- 
   pitchers2%>%
   left_join(salary2, by =c("PlayerID" = "PlayerID"))
@@ -99,16 +106,19 @@ pitchersalary<-
 str(pitchersalary)
 View(pitchersalary)
 
-#The last column, Payrollpercentage has the % signal next to all its numbers so it may be a good idea to get rid of that for computations later on. 
+# The last column, Payrollpercentage has the % signal next to all its numbers so it may be a good idea to get rid of that for computations later on. 
 
 pitchersalary<-
   pitchersalary %>% 
   mutate(Payrollpercentage = gsub(pattern = "[,%]", replacement = "", Payrollpercentage))
+pitchersalary
+
+# Now we have a clean data table with the variables we want to use and where there is no percentage sign when if computing later of the last variable. 
 ```
 
-
+# How do playoff teams differ from non-playoff teams?
 ```{r}
-#Let's take a look at how teams who have made it into the playoffs had paid their starting rotation. Under the variable 'Playoff', 0 is for teams that had not made the playoffs that year, 1 is for teams that had made playoffs that year and 2 is for teams that had made playoffs as a WildCard that year. Let's take a look at how the average team had spent depdending on whether they had made the playoffs or not. 
+# Let's take a look at how teams who have made it into the playoffs had paid their starting rotation. We want to see if the following belief 1) Do Playoff teams have better quality pitchers? is satisfied. If it is so, it would make sense that better quality pitchers are wanted for teams to make playoffs. 
 
 playoff<-
   pitchersalary%>%
@@ -122,7 +132,7 @@ playoff<-
 
 playoff
 
-#It comes to no surprise that the facet '1', which is teams who had made playoffs had more pitchers with higher average of 'ProjectedFull' which is the Average Projected Wins per starting pitcher. Teams that did not make the playoffs or teams that had just barely made the playoffs as a wildcard team were respectively facets '0' and '2'. Facet 2: the wildcard teams had the next better quality starting pitchers and facet 0 had the worst out of the three. Not surprisingly, the quality of starting pitchers in the rotation mattered on whether teams make into the playoffs or not, including wildcard teams. 
+#It comes to no surprise that the facet '1', which is teams that had made playoffs, had more pitchers with higher average of 'ProjectedFull' (=Average Projected Wins per starting pitcher). Teams that did not make the playoffs or teams that had just barely made the playoffs as a wildcard team were respectively facets '0' and '2'. Facet 2: the wildcard teams had the next better quality starting pitchers and facet 0 had the worst out of the three. Not surprisingly, the quality of starting pitchers in the rotation mattered on whether teams make into the playoffs or not, including wildcard teams. Teams would hence want to consider the quality of pitchers when carefully assessing and acquiring starting pitchers. 
 
 ```
 

@@ -18,10 +18,10 @@ output:  html_notebook
 *Description: (1) Analysis includes at least two different data sources. (2) Primary data source may NOT be loaded from an R package--though supporting data may. (3) Access to all data sources is contained within the analysis. (4) Imported data is inspected at beginning of analysis using one or more R functions: e.g., str, glimpse, head, tail, names, nrow, etc*
 
 (A) .Rmd Line numbers where at least two different data sources are imported:  
-23 24
+36,37
 
 (B) .Rmd Line numbers for inspecting data intake:  
-28 - 33
+41 - 46,  72-73
 
 ### Data Wrangling (5 out of 8 required)
 
@@ -29,23 +29,22 @@ output:  html_notebook
 
 
 (A) .Rmd Line number(s) for general data wrangling: 
-41-45, 47-52, 67-70, 74-77, 79-81, 88-90, 97-105, 117-125, 136-139, 149-151, 163-165, 169-172, 174-176
-188-194, 197-204, 213-221, 232-234
+55-58, 62-65, 68-70, 77-80, 89-93, 97-104, 134-144, 160-170, 178-180, 227-230, 241-243, 254-257, 265-267, 273- 275, 286-294, 307-310, 321-323, 337-345, 357-359, 363-365, 371,372, 382, 386, 398-400, 409-411
 
 (B) .Rmd Line number(s) for a join operation: 
-79-81 
+70
 
 (C) .Rmd Line number(s) for a spread or gather operation (or equivalent):
 
 
 (D) .Rmd Line number(s) for use of regular expressions: 
-88-90
+79
 
 (E) .Rmd Line number(s) for use of reduction and/or transformation functions: 
-41-45, 47-52, 97-105, 117-125, 149-151, 174-176, 188-194, 213-221
+57,64,79,91,92,99,136,137,162,163,181,182,184,208,209,229,230,243,256,257,267,275,288,289,309,310,323,339,340,359,372,390,391,399,400,410,411
 
 (F) .Rmd Line number(s) for use of user-defined functions: 
-238-240, 
+112-116, 122
 
 (G) .Rmd Line number(s) for use of loops and/or control flow: 
 
@@ -60,13 +59,13 @@ output:  html_notebook
 
 
 (A) .Rmd Line number(s) for use of mulitple different geoms:  
-47-52(geom_bar), 97- 105(geom_line), 117-125 (geom_point), 197-204(bar, errorbar), 213-221(point)
+102(geom_bar), 140(geom_line), 166 (geom_line), 117-125 (geom_point), 191,192(bar, errorbar), 213(point), 293(point), 343(point)
 
 (B) .Rmd Line number(s) for use of multiple aesthetics:  
-47-52, 97-105 , 117-125, 197-204, 213-221
+100,101, 138-142 , 117-125, 163- 168, 189-196, 210-214, 290-294, 341-345
 
 (C) .Rmd Line number(s) for use of layered graphics:  
-197-204
+188-196
 
 (D) .Rmd Line number(s) for use of leaflet maps:  
 
